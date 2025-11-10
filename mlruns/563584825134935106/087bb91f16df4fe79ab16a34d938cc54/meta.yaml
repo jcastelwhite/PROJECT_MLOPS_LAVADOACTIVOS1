@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/el_me/Desktop/PROJECT_MLOPS_LAVADOACTIVOS/mlruns/563584825134935106/087bb91f16df4fe79ab16a34d938cc54/artifacts
+end_time: 1762807732945
+entry_point_name: ''
+experiment_id: '563584825134935106'
+lifecycle_stage: active
+run_id: 087bb91f16df4fe79ab16a34d938cc54
+run_name: stately-whale-924
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762807732817
+status: 3
+tags: []
+user_id: el_me

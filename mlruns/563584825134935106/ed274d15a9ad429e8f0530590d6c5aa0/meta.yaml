@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/el_me/Desktop/PROJECT_MLOPS_LAVADOACTIVOS/mlruns/563584825134935106/ed274d15a9ad429e8f0530590d6c5aa0/artifacts
+end_time: 1762807563502
+entry_point_name: ''
+experiment_id: '563584825134935106'
+lifecycle_stage: active
+run_id: ed274d15a9ad429e8f0530590d6c5aa0
+run_name: big-dog-663
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762807563383
+status: 3
+tags: []
+user_id: el_me
