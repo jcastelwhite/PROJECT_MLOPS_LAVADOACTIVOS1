@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/el_me/Desktop/PROJECT_MLOPS_LAVADOACTIVOS/mlruns/563584825134935106/0252dd4f2f5f4fdfb3d7ae57e4c2b320/artifacts
+end_time: 1762807657677
+entry_point_name: ''
+experiment_id: '563584825134935106'
+lifecycle_stage: active
+run_id: 0252dd4f2f5f4fdfb3d7ae57e4c2b320
+run_name: marvelous-steed-205
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762807644078
+status: 3
+tags: []
+user_id: el_me

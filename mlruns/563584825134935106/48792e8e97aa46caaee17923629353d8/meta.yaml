@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/el_me/Desktop/PROJECT_MLOPS_LAVADOACTIVOS/mlruns/563584825134935106/48792e8e97aa46caaee17923629353d8/artifacts
+end_time: 1762807640280
+entry_point_name: ''
+experiment_id: '563584825134935106'
+lifecycle_stage: active
+run_id: 48792e8e97aa46caaee17923629353d8
+run_name: shivering-kit-582
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762807640140
+status: 3
+tags: []
+user_id: el_me

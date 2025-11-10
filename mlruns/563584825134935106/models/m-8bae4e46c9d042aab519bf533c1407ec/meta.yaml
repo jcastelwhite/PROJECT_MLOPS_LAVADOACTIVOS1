@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/el_me/Desktop/PROJECT_MLOPS_LAVADOACTIVOS/mlruns/563584825134935106/models/m-8bae4e46c9d042aab519bf533c1407ec/artifacts
+creation_timestamp: 1762807736833
+experiment_id: '563584825134935106'
+last_updated_timestamp: 1762807746691
+model_id: m-8bae4e46c9d042aab519bf533c1407ec
+model_type: null
+name: xgboost-fraud-model
+source_run_id: 6e0cac6e43654ee18531b3244cb8e826
+status: 2
+status_message: null
