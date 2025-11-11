@@ -12,10 +12,10 @@ import joblib
 #  Cargar modelo ML
 # ==========================
 try:
-    modelo = joblib.load("modelo_laft.pkl")
-    print("Modelo ML cargado correctamente.")
+    modelo = joblib.load("modelo_xgboost_laft.pkl")
+    print("Modelo XGBoost cargado correctamente.")
 except Exception as e:
-    print("No se pudo cargar el modelo. Usando datos simulados. Error:", e)
+    print("No se pudo cargar el modelo, usando modo simulado.", e)
     modelo = None
 
 # ==========================
@@ -177,5 +177,6 @@ def actualizar_tablero(contents, filename):
 
 if __name__ == '__main__':
     app.run_server(host="0.0.0.0", debug=True)
+
 
 
