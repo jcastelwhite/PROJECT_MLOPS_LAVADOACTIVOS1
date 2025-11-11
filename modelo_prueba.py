@@ -153,3 +153,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
     recall = recall_score(y_test, predictions)
     print(f"Recall: {recall}")
     mlflow.log_metric("recall", recall)
+
+import joblib
+joblib.dump(xg, "modelo_xgboost_laft.pkl")
+print("Modelo guardado como modelo_xgboost_laft.pkl")
