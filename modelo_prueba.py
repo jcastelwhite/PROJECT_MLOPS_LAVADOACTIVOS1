@@ -104,7 +104,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 mlflow.set_tracking_uri("file:./mlruns")
 
 # --- 5. Entrenamiento del Modelo XGBoost con MLflow ---
-experiment = mlflow.set_experiment("Prueba_MlFlow")
+experiment = mlflow.set_experiment("Fraude_Equipo")
 
 with mlflow.start_run(experiment_id=experiment.experiment_id):
     # Calcula scale_pos_weight para manejar el desbalance
