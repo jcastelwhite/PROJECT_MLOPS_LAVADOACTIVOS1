@@ -121,7 +121,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
         'eval_metric': 'logloss', # Corregido: 'pre' no es válido. 'logloss' o 'aucpr' son buenas opciones.
         'max_depth': 3,
         'learning_rate': 0.1,
-        'n_estimators': 200,
+        'n_estimators': 100,
         'subsample': 0.8,
         'scale_pos_weight': scale_pos_weight_value, # ¡Importante para datos desbalanceados!
         'use_label_encoder': False, # Para evitar un warning en versiones recientes de XGBoost
