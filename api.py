@@ -11,6 +11,7 @@ Original file is located at
 
 #Importacion de libreririas
 
+import pandas as pd
 from xgboost import XGBClassifier
 import pandas as pd
 import kagglehub
