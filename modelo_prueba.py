@@ -116,11 +116,12 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
 # eval_metric='logloss' es un buen default, o 'aucpr' para desbalance
 # max_features no es un parámetro de XGBoost, se elimina
 # sample_weight se pasa a .fit(), no al constructor, se usa scale_pos_weight
+#Experimento: md=5, ne=100
     params = {
         'eval_metric': 'logloss', # Corregido: 'pre' no es válido. 'logloss' o 'aucpr' son buenas opciones.
-        'max_depth': 5,
+        'max_depth': 4, 6, 8
         'learning_rate': 0.1,
-        'n_estimators': 100,
+        'n_estimators': 100, 200, 300
         'subsample': 0.8,
         'scale_pos_weight': scale_pos_weight_value, # ¡Importante para datos desbalanceados!
         'use_label_encoder': False, # Para evitar un warning en versiones recientes de XGBoost
