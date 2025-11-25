@@ -119,7 +119,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
 #Experimento: md=5, ne=100
     params = {
         'eval_metric': 'logloss', # Corregido: 'pre' no es válido. 'logloss' o 'aucpr' son buenas opciones.
-        'max_depth': 6,
+        'max_depth': 4,
         'learning_rate': 0.1,
         'n_estimators': 200,
         'subsample': 0.8,
