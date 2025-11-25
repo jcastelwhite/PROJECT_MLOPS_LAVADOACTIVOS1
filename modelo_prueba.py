@@ -104,7 +104,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 mlflow.set_tracking_uri("file:./mlruns")
 
 # --- 5. Entrenamiento del Modelo XGBoost con MLflow ---
-experiment = mlflow.set_experiment("Lavado-activos-XGB")
+experiment = mlflow.set_experiment("Fraude_Equipo")
 
 with mlflow.start_run(experiment_id=experiment.experiment_id):
     # Calcula scale_pos_weight para manejar el desbalance
@@ -116,9 +116,10 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
 # eval_metric='logloss' es un buen default, o 'aucpr' para desbalance
 # max_features no es un parámetro de XGBoost, se elimina
 # sample_weight se pasa a .fit(), no al constructor, se usa scale_pos_weight
+#Experimento: md=5, ne=100
     params = {
         'eval_metric': 'logloss', # Corregido: 'pre' no es válido. 'logloss' o 'aucpr' son buenas opciones.
-        'max_depth': 5,
+        'max_depth': 3,
         'learning_rate': 0.1,
         'n_estimators': 100,
         'subsample': 0.8,
@@ -153,3 +154,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
     recall = recall_score(y_test, predictions)
     print(f"Recall: {recall}")
     mlflow.log_metric("recall", recall)
+
+import joblib
+joblib.dump(xg, "modelo_xgboost_laft.pkl")
+print("Modelo guardado como modelo_xgboost_laft.pkl")
