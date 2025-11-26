@@ -158,3 +158,5 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
 import joblib
 joblib.dump(xg, "modelo_xgboost_laft.pkl")
 print("Modelo guardado como modelo_xgboost_laft.pkl")
+
+#fin____
